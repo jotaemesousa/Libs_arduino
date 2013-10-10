@@ -72,15 +72,16 @@ void serial_receive(void)
 
 					inData_[index_] = 0;
 				}
-			}
-			else
-			{
-				// no parse action
-				receiving_cmd = 0;
-				index_ = 0;
+				else
+				{
+					// no parse action
+					receiving_cmd = 0;
+					index_ = 0;
 
-				inData_[index_] = 0;
+					inData_[index_] = 0;
+				}
 			}
+			
 		}
 	}
 
