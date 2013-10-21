@@ -98,7 +98,7 @@ uint8_t serial_parse(char *buffer)
 		//do stuff
 		return 0;
 	}
-	else if(!strncmp(buffer,":AHR;",4))			// motor cmd
+	else if(!strncmp(buffer,":AHR;",5))			// motor cmd
 	{
 		resetFunc();
 		return 0;
